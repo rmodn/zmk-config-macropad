@@ -7,8 +7,8 @@
 
             default_layer {
                 bindings = <
-                    &kp C_VOLUME_UP
                     &kp C_VOLUME_DOWN
+                    &kp C_VOLUME_UP
                     &kp C_MUTE
                     &kp F14
                     &kp F15
