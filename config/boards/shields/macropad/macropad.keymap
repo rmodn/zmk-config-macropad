@@ -10,8 +10,8 @@
         zs: zmk_sleep_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <500>
-            bindings = <&kp T &kp E &kp S &kp T>
+            wait-ms = <500>;
+            bindings = <&kp T &kp E &kp S &kp T>;
         };
     };
 
