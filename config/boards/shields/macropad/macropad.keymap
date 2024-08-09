@@ -29,7 +29,7 @@
                     &kp F16
                     &kp F17
                     &lpm LA(F4) A
-                    &lpm C_SLEEP
+                    &lpm C_SLEEP A
                     >;
             };
         };
