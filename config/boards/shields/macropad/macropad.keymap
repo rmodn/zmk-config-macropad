@@ -6,6 +6,16 @@
 };
 
 / {
+    behaviors{
+        lpm : long_press_mod{
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <1000>;
+            quick-tap-ms = <-1>;
+            bindings = <&kp> , <&none>;
+        };
+    };
     keymap {
             compatible = "zmk,keymap";
 
@@ -18,7 +28,7 @@
                     &kp F15
                     &kp F16
                     &kp F17
-                    &mt LA(F4) A
+                    &lpm LA(F4) A
                     &kp F19
                     >;
             };
