@@ -28,7 +28,7 @@
                     &kp F15
                     &kp F16
                     &kp F17
-                    &lpm LA(F4) F18
+                    &lpm LA(F4) A
                     &kp F19
                     >;
             };
