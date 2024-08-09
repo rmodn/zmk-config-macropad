@@ -7,14 +7,15 @@
 
 / {
     behaviors{
-        lpm : long_press_mod{
+        lpm : long_press_mod {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <1000>;
-            bindings = <&kp> , <&kp>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <400>;
+            bindings = <&kp>, <&kp>;
         };
     };
+
     keymap {
             compatible = "zmk,keymap";
 
