@@ -24,7 +24,7 @@
             tapping-term-ms = <1000>;   
         };
 
-        zsm : zmk_sleep_mod {
+        zsm: zmk_sleep_mod {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&zs>, <&none>;
