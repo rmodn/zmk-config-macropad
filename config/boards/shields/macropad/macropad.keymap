@@ -10,7 +10,7 @@
         lpm: long_press_mod {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp>, <&none>;
             flavor = "tap-preferred";
             tapping-term-ms = <1000>;   
         };
@@ -28,7 +28,7 @@
                     &kp F15
                     &kp F16
                     &kp F17
-                    &lpm LA(F4) A
+                    &lpm LA(F4) 
                     &kp F19
                     >;
             };
