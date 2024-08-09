@@ -6,6 +6,15 @@
 };
 
 / {
+    macros {
+        zs: zmk_sleep_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <500>
+            bindings = <&kp T &kp E &kp S &kp T>
+        };
+    };
+
     behaviors{
         lpm: long_press_mod {
             compatible = "zmk,behavior-hold-tap";
@@ -29,7 +38,7 @@
                     &kp F16
                     &kp F17
                     &lpm LA(F4) A
-                    &lpm K_SLEEP A
+                    &zs
                     >;
             };
         };
