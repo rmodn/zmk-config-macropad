@@ -11,7 +11,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <500>;
-            bindings = <&kp T &kp E &kp S &kp T>;
+            bindings = <&kp LG(X) &kp U &kp S>;
         };
     };
 
@@ -23,6 +23,15 @@
             flavor = "tap-preferred";
             tapping-term-ms = <1000>;   
         };
+
+        zsm : zmk_sleep_mod {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&zs>, <&none>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <1000>;   
+        }
+
     };
 
     keymap {
@@ -38,7 +47,7 @@
                     &kp F16
                     &kp F17
                     &lpm LA(F4) A
-                    &zs
+                    &zsm none none 
                     >;
             };
         };
