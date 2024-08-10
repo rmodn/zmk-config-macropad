@@ -9,7 +9,7 @@
     macros {
         zs: zmk_sleep_macro {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            #binding-cells = <1>;
             wait-ms = <500>;
             bindings = <&kp LG(X) &kp U &kp S>;
         };
@@ -47,7 +47,7 @@
                     &kp F16
                     &kp F17
                     &lpm LA(F4) A
-                    &zsm none none 
+                    &zsm LSHIFT LSHIFT 
                     >;
             };
         };
