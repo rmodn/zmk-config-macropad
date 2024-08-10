@@ -11,7 +11,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <50>;
-            bindings = <&kp LG(X) &kp U &kp S>;
+            bindings = <&none &kp LG(X) &kp U &kp S>;
         };
     };
 
@@ -27,8 +27,8 @@
         tds: tap_dance_sleep {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp A>, <&kp B>;
+            tapping-term-ms = <300>;
+            bindings = <&none>, <&zs;
         };
 
     };
