@@ -27,8 +27,8 @@
         tds: tap_dance_sleep {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&none>, <&zs>, <&none>;
+            tapping-term-ms = <150>;
+            bindings = <&none>, <&zs>;
         };
 
     };
