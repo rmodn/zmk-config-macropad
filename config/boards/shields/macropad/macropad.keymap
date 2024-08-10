@@ -29,7 +29,7 @@
             #binding-cells = <2>;
             bindings = <&zs>, <&none>;
             flavor = "tap-preferred";
-            tapping-term-ms = <1000>;   
+            tapping-term-ms = <100>;   
         };
 
     };
