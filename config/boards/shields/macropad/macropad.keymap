@@ -11,7 +11,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <50>;
-            bindings = <&none &kp LG(X) &kp U &kp S>;
+            bindings = <&none &kp LG(X) &none &kp U &kp S>;
         };
     };
 
