@@ -30,7 +30,7 @@
             bindings = <&zs>, <&none>;
             flavor = "tap-preferred";
             tapping-term-ms = <1000>;   
-        }
+        };
 
     };
 
