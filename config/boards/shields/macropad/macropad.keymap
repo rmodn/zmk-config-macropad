@@ -10,7 +10,7 @@
         zs: zmk_sleep_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <500>;
+            wait-ms = <100>;
             bindings = <&kp LG(X) &kp U &kp S>;
         };
     };
@@ -29,7 +29,7 @@
             #binding-cells = <2>;
             bindings = <&zs>, <&none>;
             flavor = "tap-preferred";
-            tapping-term-ms = <100>;   
+            tapping-term-ms = <1000>;   
         };
 
     };
