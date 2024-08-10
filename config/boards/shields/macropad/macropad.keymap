@@ -24,12 +24,11 @@
             tapping-term-ms = <1000>;   
         };
 
-        zsm: zmk_sleep_mod {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            bindings = <&zs>, <&none>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <1000>;   
+        tds: tap_dance_sleep {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms: <200>;
+            bindings = <&none>, <&zs>, <&none>;
         };
 
     };
@@ -47,7 +46,7 @@
                     &kp F16
                     &kp F17
                     &lpm LA(F4) A
-                    &zsm LSHIFT LSHIFT 
+                    &tds 
                     >;
             };
         };
